@@ -1,0 +1,261 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #434455;
+    background-color: #ffffff;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+  }
+  
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  
+  .site-header {
+    border-bottom: 1px solid #e7e9fc;
+    background-color: #ffffff;
+  }
+  
+  .site-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+  }
+  
+  .logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: #4d5ae5;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  .nav-list {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .nav-link {
+    font-weight: 500;
+    color: #2e2f42;
+    text-decoration: none;
+    padding: 24px 0;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #404bbf;
+  }
+  
+  
+  .hero {
+    background-color: #2e2f42;
+    text-align: center;
+    padding: 120px 0;
+  }
+  
+  .hero-title {
+    color: #ffffff;
+    font-size: 56px;
+    line-height: 1.07;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    margin-bottom: 48px;
+  }
+  
+  .btn-primary {
+    color: #ffffff;
+    background-color: #4d5ae5;
+    padding: 16px 32px;
+    border-radius: 4px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #404bbf;
+  }
+  
+  
+  .services {
+    padding: 100px 0;
+  }
+  
+  .services-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+  }
+  
+  .service-item {
+    flex-basis: calc((100% - 72px) / 4);
+  }
+  
+  .service-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #2e2f42;
+    margin-bottom: 8px;
+  }
+  
+  .service-desc {
+    color: #434455;
+  }
+  
+  
+  .team {
+    background-color: #f4f4fd;
+    padding: 120px 0;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 36px;
+    color: #2e2f42;
+    margin-bottom: 72px;
+  }
+  
+  .team-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .team-member {
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 2px 1px rgba(46,47,66,0.08),
+                0 1px 1px rgba(46,47,66,0.16),
+                0 1px 6px rgba(46,47,66,0.08);
+    text-align: center;
+    flex-basis: calc((100% - 72px) / 4);
+  }
+  
+  .team-member img {
+    width: 100%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+  
+  .team-name {
+    font-size: 20px;
+    font-weight: 500;
+    color: #2e2f42;
+    margin-top: 32px;
+    margin-bottom: 8px;
+  }
+  
+  .team-role {
+    color: #434455;
+    margin-bottom: 32px;
+  }
+  
+  
+  .portfolio {
+    padding: 120px 0;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .portfolio-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 72px;
+  }
+  
+  .portfolio-item {
+    background-color: #fff;
+    border: 1px solid #e7e9fc;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .portfolio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+  }
+  
+  .portfolio-content {
+    padding: 16px;
+    text-align: left;
+  }
+  
+  .portfolio-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #2e2f42;
+    margin-bottom: 4px;
+  }
+  
+  .portfolio-category {
+    font-size: 14px;
+    color: #6b7280;
+  }
+  
+  
+  .site-footer {
+    background-color: #2e2f42;
+    padding: 100px 0;
+    color: #f4f4fd;
+    text-align: left;
+  }
+  
+  .site-footer .logo {
+    display: inline-block;
+    margin-bottom: 16px;
+    color: #4d5ae5;
+  }
+  
+  .footer-desc {
+    color: #f4f4fd;
+    max-width: 264px;
+  }
+  
+  
+  @media (max-width: 992px) {
+    .services-list,
+    .team-list,
+    .portfolio-list {
+      grid-template-columns: repeat(2, 1fr);
+      flex-wrap: wrap;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .services-list,
+    .team-list,
+    .portfolio-list {
+      grid-template-columns: 1fr;
+    }
+  
+    .hero-title {
+      font-size: 36px;
+    }
+  }
+  
