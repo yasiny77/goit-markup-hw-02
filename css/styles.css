@@ -75,6 +75,16 @@ color: #4d5ae5;
   color: #404bbf;
 }
 
+.contact-link{
+  display: flex;
+  gap:16px;
+}
+
+.contact-link{
+  text-decoration: none;
+  color: inherit;
+  font-size: normal;
+}
 
 .hero {
   background-color: #2e2f42;
